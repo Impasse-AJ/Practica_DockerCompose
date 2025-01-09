@@ -1,0 +1,7 @@
+services:
+  python-api:
+    build: ./python-api
+    ports:
+      - "8001:8001"  # Puerto mapeado para la API Python
+    environment:
+      - PORT=8001  # Puerto definido como variable de entorno
